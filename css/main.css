@@ -126,6 +126,7 @@ a{
 
 .port-info .name{
 	font-size: 30px;
+    white-space: nowrap;
 }
 
 .port-info .left{
