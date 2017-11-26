@@ -4,7 +4,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: Lato, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
 
@@ -38,7 +38,8 @@ body {
   flex-grow: 1;
 }
 
-.fa-briefcase {
+.fa-briefcase,
+.fa-graduation-cap {
   background-color: #313131;
   border-radius: 50%;
   color: #fff;
@@ -59,7 +60,7 @@ body {
 
 .details-title,
 .work-experience-title span {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 400;
   margin-bottom: 12px;
 }
@@ -115,26 +116,29 @@ body {
   max-width: 100%;
 }
 
-.first_name,
-.job_title {
+.first-name{
   font-size: 32px;
 }
 
-.last_name {
+.last-name {
   font-size: 42px;
+}
+
+.job-title {
+  font-size: 24px;
 }
 
 .details-title{
   text-transform: uppercase;
 }
 
-.first_name,
-.last_name,
-.job_title {
+.first-name,
+.last-name,
+.job-title {
   font-weight: 400;
-  max-width: 100%;
 }
 
-.job_title {
+.job-title {
   color: #858ea1;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif
 }
