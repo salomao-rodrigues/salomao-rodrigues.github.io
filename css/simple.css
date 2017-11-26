@@ -8,6 +8,27 @@ body {
   font-weight: 300;
 }
 
+@media (max-width:767px) {
+  .row .personal-details {
+    border-right: none;
+  }
+}
+
+@media print {
+  /* because bootstrap breaks page breaking in chrome!! */
+  .row .work-experience-title {
+    margin: 130px 0 24px;
+  }
+
+  .row .social-links-print {
+    display: block;
+  }
+
+  .row .social-links {
+    display: none;
+  }
+}
+
 .personal-details {
   border-right: 4px solid #313131;
   font-family: Helvetica, Arial, sans-serif
@@ -27,15 +48,27 @@ body {
   line-height: 34px;
 }
 
-.social-links {
-  display: flex;
-  flex-direction: row;
-  margin: 20px 0;
-  text-align: center;
+.social-links a,
+.social-links a:link,
+.social-links a:visited {
+  color: #616161;
+}
+
+.social-links a:hover {
+  color: #212121;
 }
 
 .social-links > div {
-  flex-grow: 1;
+  display: inline-block;
+  width: 50px;
+}
+
+.social-links-print .fa {
+  width: 34px;
+}
+
+.social-links-print {
+  display: none;
 }
 
 .fa-briefcase,
