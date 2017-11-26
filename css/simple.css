@@ -27,6 +27,17 @@ body {
   line-height: 34px;
 }
 
+.social-links {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.social-links > div {
+  flex-grow: 1;
+}
+
 .fa-briefcase {
   background-color: #313131;
   border-radius: 50%;
@@ -36,6 +47,10 @@ body {
   margin-right: 16px;
   text-align: center;
   width: 60px;
+}
+
+.work-experience-item {
+  margin-bottom: 30px;
 }
 
 .work-experience-title {
@@ -49,8 +64,10 @@ body {
   margin-bottom: 12px;
 }
 
-.work-experience-item {
+.work-item-header {
   height: 75px;
+  margin-bottom: 10px;
+  position: relative;
 }
 
 .work-item-logo {
@@ -79,7 +96,14 @@ body {
   height: 50%;
 }
 
-.work-item-company .company-details {
+.work-item-company .job-dates {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.work-item-company .company-details,
+.work-item-company .job-dates {
   color: #97aac3;
   height: 50%;
   line-height: 18px;
