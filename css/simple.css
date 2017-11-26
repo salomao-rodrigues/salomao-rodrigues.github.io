@@ -12,6 +12,10 @@ body {
   .row .personal-details {
     border-right: none;
   }
+
+  .row .work-item-company .job-dates {
+    position: relative;
+  }
 }
 
 @media print {
@@ -41,6 +45,10 @@ body {
 .details-container.profile {
   margin-top: 20px;
   text-align: center;
+}
+
+.details-container.languages ul {
+  padding-left: 30px;
 }
 
 .about-and-contact .fa {
@@ -99,7 +107,6 @@ body {
 }
 
 .work-item-header {
-  height: 75px;
   margin-bottom: 10px;
   position: relative;
 }
@@ -119,7 +126,6 @@ body {
 
 .work-item-company {
   display: inline-block;
-  height: 75px;
   padding-left: 10px;
   vertical-align: top
 }
@@ -127,7 +133,6 @@ body {
 .work-item-company .job-title {
   font-size: 17px;
   font-weight: 600;
-  height: 50%;
 }
 
 .work-item-company .job-dates {
@@ -139,7 +144,6 @@ body {
 .work-item-company .company-details,
 .work-item-company .job-dates {
   color: #97aac3;
-  height: 50%;
   line-height: 18px;
 }
 
