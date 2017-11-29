@@ -16,13 +16,6 @@ body {
   .row .work-item-company .job-dates {
     position: relative;
   }
-}
-
-@media print {
-  /* because bootstrap breaks page breaking in chrome!! */
-  .row .work-experience-title {
-    margin: 130px 0 24px;
-  }
 
   .row .social-links-print {
     display: block;
@@ -30,6 +23,20 @@ body {
 
   .row .social-links {
     display: none;
+  }
+}
+
+@media (max-width:450px) {
+  .work-item-logo,
+  .work-item-company {
+    display: block;
+  }
+}
+
+@media print {
+  /* because bootstrap breaks page breaking in chrome!! */
+  .row .work-experience-title {
+    margin: 130px 0 24px;
   }
 }
 
@@ -127,7 +134,9 @@ body {
 .work-item-company {
   display: inline-block;
   padding-left: 10px;
-  vertical-align: top
+  position: relative;
+  vertical-align: top;
+  width: calc(100% - 10px - 75px); /* 100% - padding - logoWidth */
 }
 
 .work-item-company .job-title {
@@ -138,7 +147,7 @@ body {
 .work-item-company .job-dates {
   position: absolute;
   right: 0;
-  top: 0;
+  bottom: 0;
 }
 
 .work-item-company .company-details,
