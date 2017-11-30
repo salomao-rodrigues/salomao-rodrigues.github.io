@@ -86,6 +86,7 @@ body {
   display: none;
 }
 
+.fa-coffee,
 .fa-briefcase,
 .fa-graduation-cap {
   background-color: #313131;
@@ -107,7 +108,8 @@ body {
 }
 
 .details-title,
-.work-experience-title span {
+.work-experience-title span,
+.tech-skills span {
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 12px;
