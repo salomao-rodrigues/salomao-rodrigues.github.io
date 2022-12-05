@@ -1,3 +1,3 @@
 # salomao-rodrigues.github.io
 
-Home page for http://www.salomao.me
+Home page for https://salomao-rodrigues.github.io/
